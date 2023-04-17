@@ -1,0 +1,27 @@
+.example {
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+.decision {
+    margin: 30px;
+    display: flex;
+    height: 600px;
+    width: 600px;
+    background: #E1FFFF;
+    position: relative;
+    float: left; /*Задаем обтекание*/ 
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.content {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5); 
+}
+
