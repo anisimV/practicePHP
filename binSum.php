@@ -44,16 +44,22 @@ $y = (isset($_POST['y']) and is_binary($_POST['y'])) ? $_POST['y'] : '';
 
         <div class="decision">
             <div class="content">
-                <form method="post">
-                    <fieldset style="display: inline-block;">
-                        <legend>Решение</legend>
-                        <img src="img/binSum.PNG" alt="binSum">
-                        
-
-                    </fieldset>
-                </form>
-            </div>
+    <code></code>
+<pre class="code">
+function binSum($binNum1, $binNum2) {
+    $decNum1 = bindec($binNum1);
+    $decNum2 = bindec($binNum2);
+    return decbin($decNum1 + $decNum2);
+}
+function is_binary($num) {
+    return preg_match('~^[01]+$~', $num);
+}
+$x = (isset($_POST['x']) and is_binary($_POST['x'])) ? $_POST['x'] : '';
+$y = (isset($_POST['y']) and is_binary($_POST['y'])) ? $_POST['y'] : '';
+</pre>
+</code>
         </div>
-    </div>
+    </div>  
+</div>
 </body>
 </html>
