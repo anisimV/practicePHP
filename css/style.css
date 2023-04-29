@@ -69,14 +69,83 @@
     transition: 0.3s;
 }
 
-.content span {
-    border-bottom: 2px solid #4ebe08;
-}
-
+/*
 .code {
     font-family: Consolas,"courier new";
     color: crimson;
     background-color: #f1f1f1;
     padding: 2px;
     font-size: 80%;
+}
+*/
+
+.back {
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+
+.option {
+    font-family: sans-serif;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 16xp;
+    color :#fff;
+    background-color: #f83711;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.option:hover { background: #4fd0d0; }
+.input {
+    width: 100%;
+    padding: 0 0 0 0;
+    border: none;
+    border-bottom: 1px solid #686767;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contents {
+    margin: 10px;
+    display: flex;
+    height: auto;
+    width: auto;
+    position: relative;
+    float: left; /*Задаем обтекание*/
+
+}
+
+.functions {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.test {
+    width: auto;
+}
+
+.vertical {
+    border-right: 7px solid rgb(120, 120, 120);
+    height: auto;
+    position:left;
+    margin-left: 40px;
+    border-radius: 450%;
+}
+
+.forms {
+    width: 300px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin: 30px;
 }

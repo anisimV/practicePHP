@@ -14,38 +14,52 @@ $output = cutText($_GET['text']??'', (int) ($_GET['number']??0));
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/libs/highlight/styles/atom-one-dark-reasonable.min.css">
     <title>cutText</title>
 </head>
-<body>
-    <div class="example">
-            <div class="decision">
-                    <div class="content">
-                        <form class="form">
-                                    <p>Строка:</p>
-                                <input class="input" type="text" name="text">
-                                    <p>Кол-во символов:</p>
-                                <input class="input" type="number" name="number"> </br>
-                                    <button class="sub" type="submit">Обрезать</button> </br>
-                        <p>Результат: <span><?=@$output?></span></p>
-                        </form>
-                    </div>
+    <body>
+        <div class="example">
+            <div class="back">
+                <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
             </div>
-    
-    <div class="decision">
-            <div class="content">
+            
+            <div class="decision">
+                <div class="content">
+
+                    <form class="form">
+                        <p>Строка:</p>
+                        <input class="input" type="text" name="text" autocomplete="off">
+                        <p>Кол-во символов:</p>
+                        <input class="input" type="number" name="number" autocomplete="off"> </br>
+                        <button class="sub" type="submit">Обрезать</button> </br>
+                        <p>Результат: <span><?=@$output?></span></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="decision">
+                <div class="content">
 <pre class="code">
-//код php:
+    <code class="php">
+&lt;?php
+
 function cutText($text, $number)
 {
-$resutl = mb_substr($text, 0, $number) . "...";
-return $resutl;
+    $resutl = mb_substr($text, 0, $number) . "...";
+    return $resutl;
 }
 $output = cutText($_GET['text']??'', (int) ($_GET['number']??0));
+
+?&gt;
+    </code>
 </pre>
 
+                </div>
+            </div>  
         </div>
-    </div>  
-    </div>         
-</body>
+        
+        <script src="/libs/highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
 </html>
