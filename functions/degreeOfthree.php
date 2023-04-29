@@ -31,7 +31,7 @@ if (array_key_exists('num', $_GET)){
         <div class="example">
             <div class="back">
                 <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
-                <a href="/degreeOfthreeTwo.php"><button class="option" type="submit">Решение 2 </button></a>
+                <a href="/functions/degreeOfthreeTwo.php"><button class="option" type="submit">Решение 2 </button></a>
             </div>
 
                 <div class="decision">
