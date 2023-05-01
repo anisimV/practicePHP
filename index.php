@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+        require_once 'forms/dateTime.php';
+?>
     <div class="example">
             <div class="test">
                 <a href="/test.php">Тестовый файл</a>
@@ -18,7 +21,7 @@
                     <b><span>Решение функций:</span></b>
                     <li><a href="functions/binSum.php">Функция binSum</a></li>
                     <li><a href="functions/cutText.php">Функция cutText</a></li>
-                    <li><a href="functions/cutText.php">Функция takeCard</a></li>
+                    <li><a href="functions/takeCard.php">Функция takeCard</a></li>
                     <li><a href="functions/fibonacci.php">Функция fibonacci</a></li>
                     <li><a href="functions/degreeOfthree.php">Функция degreeOfthree</a></li>
                 </ul>

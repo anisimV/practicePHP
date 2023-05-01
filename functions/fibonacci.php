@@ -25,6 +25,7 @@ $output = fibonacci($_GET['num']??'')
         <div class="example">
             <div class="back">
                 <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <p>Функция показывает число фибоначи, нужно указать порядковый номер</p>
             </div>
             
                 <div class="decision">

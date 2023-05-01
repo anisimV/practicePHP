@@ -22,6 +22,7 @@ $output = cutText($_GET['text']??'', (int) ($_GET['number']??0));
         <div class="example">
             <div class="back">
                 <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <p>Функция обрезает строку до указанного числа символов и добовляет "..."</p>
             </div>
             
             <div class="decision">

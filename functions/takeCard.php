@@ -21,6 +21,8 @@ $output = takeCard($_POST['credit']??'', (int) ($_POST['rep']??0))
         <div class="example">
             <div class="back">
                 <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <p>Функция скрывает начало строки оставляя 4 последних символа ( можно указать количество "*" от 1 до 5)
+                </p>
             </div>
 
             <div class="decision">

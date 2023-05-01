@@ -11,42 +11,40 @@
         <div class="example">
             <div class="back">
                 <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <p>Тест работы формы (Отправка формы / результат отправки формы) </p>
             </div>
-        <?php 
-        /*if (isset($_POST)['name']) {
-            #name = $_POST['name'];
-        } else {
-            $name = '';
-        }*/
-        $name = $_POST['name'] ?? '';
-        $emeil = $_POST['emeil'] ?? '';
-        ?>
 
+<?php
+$name = $_POST['name'] ?? '';
+$emeil = $_POST['emeil'] ?? '';
+?>
 
-        <?php if ((!trim($name)) || (!trim($emeil))): ?>
+                <div class="upkeep">
+                    <form action="<?php echo $_SERVER['SCRIPT_NAME']?>" method="post" class="forms"">
+                        
+                    <p>Name: <input type="text" name="name" class="input"></p>
+                        <p>Emeil: <input type="text" name="emeil" class="input"></p>
+                        <p>
+                            <button type="submit" class="sub" name="send-form">Отправить</button>
+                        </p>
 
-                <?php if (!empty($_POST)): ?>
-                    <p>Заполните поля</p>
-                <?php endif; ?>
-                
+    
+            </form>
 
-        <form action="testFormsTwo.php" method="post" class="forms">
-            <p>Name: <input type="text" name="name" class="input"></p>
-            <p>Emeil: <input type="text" name="emeil" class="input"></p>
+<?php if ((!trim($name)) || (!trim($emeil))): ?>
 
-            <p>
-                <button type="submit" name="send-form">Send</button>
-            </p>
+    <?php if (!empty($_POST)): ?>
+        <p style="color: red" class="error"">Заполните поля</p>
+    <?php endif; ?>
 
-            <?php else: ?>
+    <?php else: ?>
+            <div class="forms">
+                <p>Name: <?= $_POST['name'] ?> </p>
+                <p>Emeil: <?= $_POST['emeil'] ?> </p>
+            </div>
+    <?php endif; ?>
 
-<p>Name: <?= $_POST['name'] ?> </p>
-<p>Emeil: <?= $_POST['emeil'] ?> </p>
-
-<?php endif; ?>
-        </form>
-
-
+            </div>
         </div>
     </body>
 </html>
