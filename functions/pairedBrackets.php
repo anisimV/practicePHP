@@ -1,14 +1,18 @@
 <?php 
 
-function fibonacci($num)
+function pairedBrackets($str)
 {
-    if ($num < 2) {
-        return $num;
-    } else {
-        return fibonacci($num - 1) + fibonacci($num - 2);
+    $count = 0;
+    for ($i = 0; $i < strlen($str); $i++) {
+        $count = $str[$i] === '(' ? $count + 1 : $count - 1;
+        if ($count < 0) {
+            return false;
+        }
     }
+
+    return $count === 0;
 }
-$output = fibonacci($_GET['num']??'')
+$output = pairedBrackets($_GET['str']??'')
 
 ?>
 <!DOCTYPE html>
@@ -19,21 +23,22 @@ $output = fibonacci($_GET['num']??'')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/libs/highlight/styles/atom-one-dark-reasonable.min.css">
-    <title>fibonacci</title>
+    <title>pairedBrackets</title>
 </head>
     <body>
         <div class="example">
             <div class="back">
                 <a href="/index.php"><button class="sub" type="submit">Главная</button></a>
-                <p>Функция показывает число фибоначи, нужно указать порядковый номер</p>
+                <p>Функция принимает строку из скобок и проверяется имеет ли каждая скобка пару
+                </p>
             </div>
-            
-                <div class="decision">
+
+            <div class="decision">
                         <div class="content">
                         
                             <form class="form">
-                                <p>Введите число</p>
-                                <input class="input" type="number" name="num" autocomplete="off">
+                                <p>Введите строку из "(", ")"</p>
+                                <input class="input" type="text" name="str" autocomplete="off">
                                 <button class="sub" type="submit">Вычислить</button> </br>
                                 <p>Результат: <span><?=@$output?></span></p>
                             </form>
@@ -47,15 +52,19 @@ $output = fibonacci($_GET['num']??'')
     <code class="php">
 &lt;?php 
 
-function fibonacci($num)
+function pairedBrackets($str)
 {
-    if ($num &lt; 2) {
-        return $num;
-    } else {
-        return fibonacci($num - 1) + fib($num - 2);
+    $count = 0;
+    for ($i = 0; $i < strlen($str); $i++) {
+        $count = $str[$i] === '(' ? $count + 1 : $count - 1;
+        if ($count < 0) {
+            return false;
+        }
     }
+
+    return $count === 0;
 }
-$output = fibonacci($_POST['num']??'')
+$output = pairedBrackets($_POST['str']??'')
 
 ?&gt;
     </code>

@@ -58,6 +58,7 @@
     transition: 0.3s;
     margin-top: 10px;
 }
+
 .sub:hover { background: #4fd0d0; }
 .input {
     width: 100%;
@@ -142,13 +143,13 @@
 
 .upkeep {
     width: auto;
-    height: 310px;
+    height: 320px;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5); 
     margin-top: 20px;
+    padding-top: 5px;
 }
 
 .forms {
-
     width: 300px;
     height: auto;
     padding: 32px;
@@ -162,7 +163,13 @@
 }
 
 .error {
-    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #f83711;
 
 }
 
+.li {
+    list-style-type: none;
+    padding-top: 5px;
+}

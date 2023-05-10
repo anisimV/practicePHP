@@ -30,7 +30,7 @@ if (array_key_exists('num', $_GET)){
     <body>
         <div class="example">
             <div class="back">
-                <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <a href="/index.php"><button class="sub" type="submit">Главная</button></a>
                 <a href="/functions/degreeOfthreeTwo.php"><button class="option" type="submit">Решение 2 </button></a>
                 <p>Функция проверяет является ли введенное чесло степенью тройки</p>
             </div>

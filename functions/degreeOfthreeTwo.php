@@ -36,7 +36,7 @@ if (isset($_GET['num'])) {
     <body>
         <div class="example">
             <div class="back">
-                <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <a href="/index.php"><button class="sub" type="submit">Главная</button></a>
                 <a href="/functions/degreeOfthree.php"><button class="option" type="submit">назад </button></a>
             </div>
 

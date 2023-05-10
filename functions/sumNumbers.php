@@ -1,16 +1,17 @@
 <?php 
 
-function fibonacci($num)
+function sumNumbers($num)
 {
-    if ($num < 2) {
-        return $num;
-    } else {
-        return fibonacci($num - 1) + fibonacci($num - 2);
+    if($num >= 10) {
+        $num = array_sum(str_split($num));
     }
+    
+    return $num;
 }
-$output = fibonacci($_GET['num']??'')
+$output = sumNumbers($_GET['num']??'')
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +20,13 @@ $output = fibonacci($_GET['num']??'')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/libs/highlight/styles/atom-one-dark-reasonable.min.css">
-    <title>fibonacci</title>
+    <title>sumNumbers</title>
 </head>
     <body>
         <div class="example">
             <div class="back">
                 <a href="/index.php"><button class="sub" type="submit">Главная</button></a>
-                <p>Функция показывает число фибоначи, нужно указать порядковый номер</p>
+                <p>Функция принимает число и возвращает сумму чисел полученное из числа</p>
             </div>
             
                 <div class="decision">
@@ -47,15 +48,15 @@ $output = fibonacci($_GET['num']??'')
     <code class="php">
 &lt;?php 
 
-function fibonacci($num)
+function sumNumbers($num)
 {
-    if ($num &lt; 2) {
-        return $num;
-    } else {
-        return fibonacci($num - 1) + fib($num - 2);
+    if($num >= 10) {
+        $num = array_sum(str_split($num));
     }
+    
+    return $num;
 }
-$output = fibonacci($_POST['num']??'')
+$output = sumNumbers($_GET['num']??'')
 
 ?&gt;
     </code>

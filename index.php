@@ -13,7 +13,8 @@
 ?>
     <div class="example">
             <div class="test">
-                <a href="/test.php">Тестовый файл</a>
+                <p><?=dateTimes();?>  <a href="https://github.com/anisimV?tab=repositories" target="_blank">git</a> </p>
+            <a href="/test.php">Тестовый файл</a> 
             </div>
         <div class="contents">
             <div class="functions">
@@ -23,7 +24,9 @@
                     <li><a href="functions/cutText.php">Функция cutText</a></li>
                     <li><a href="functions/takeCard.php">Функция takeCard</a></li>
                     <li><a href="functions/fibonacci.php">Функция fibonacci</a></li>
+                    <li><a href="functions/sumNumbers.php">Функция sumNumbers</a></li>
                     <li><a href="functions/degreeOfthree.php">Функция degreeOfthree</a></li>
+                    <li><a href="functions/pairedBrackets.php" style="color: red;">(ВРЕМЕННО НЕ РАБОТАЕТ)</a></li>
                 </ul>
                 <div class="vertical"></div>
             </div>
@@ -33,6 +36,7 @@
                 <ul>
                     <b><span>Работа с формами:</span></b>
                     <li><a href="/forms/testFormsTwo.php">testFormsTwo</a></li>
+                    <li><a href="/forms//formSession/index.php">Тест работы сессий</a></li>
                 </ul>
                 <div class="vertical"></div>
             </div>

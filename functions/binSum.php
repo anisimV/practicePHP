@@ -25,7 +25,7 @@ $y = (isset($_POST['y']) and is_binary($_POST['y'])) ? $_POST['y'] : '';
     <body>
         <div class="example">
             <div class="back">
-                <a href="/index.html"><button class="sub" type="submit">Главная</button></a>
+                <a href="/index.php"><button class="sub" type="submit">Главная</button></a>
                 <p>Функция принимает два бинарных числа и возвращает их сумму так же в виде бинарного числа</p>
             </div>
 
