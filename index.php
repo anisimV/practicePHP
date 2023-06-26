@@ -25,8 +25,7 @@
                     <li><a href="functions/takeCard.php">Функция takeCard</a></li>
                     <li><a href="functions/fibonacci.php">Функция fibonacci</a></li>
                     <li><a href="functions/sumNumbers.php">Функция sumNumbers</a></li>
-                    <li><a href="functions/degreeOfthree.php">Функция degreeOfthree</a></li>
-                    <li><a href="functions/pairedBrackets.php" style="color: red;">(ВРЕМЕННО НЕ РАБОТАЕТ)</a></li>
+                    <li><a href="functions/degreeOfthree.php">Функция degreeOfthree</a></li></a></li>
                 </ul>
                 <div class="vertical"></div>
             </div>
